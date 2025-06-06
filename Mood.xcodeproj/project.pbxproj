@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		68C0FE822DDC52BA0084941D /* CodableAppStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 68C0FE812DDC52BA0084941D /* CodableAppStorage */; };
+		68C0FF462DDE136E0084941D /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = 68C0FF452DDE136E0084941D /* DotLottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		68C0FE692DDB60060084941D /* Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		68C001642DE4A98D0084941D /* Exceptions for "Mood" folder in "Mood" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 68C0FE682DDB60060084941D /* Mood */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		68C0FE6B2DDB60060084941D /* Mood */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				68C001642DE4A98D0084941D /* Exceptions for "Mood" folder in "Mood" target */,
+			);
 			path = Mood;
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C0FE822DDC52BA0084941D /* CodableAppStorage in Frameworks */,
+				68C0FF462DDE136E0084941D /* DotLottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,8 @@
 			);
 			name = Mood;
 			packageProductDependencies = (
+				68C0FE812DDC52BA0084941D /* CodableAppStorage */,
+				68C0FF452DDE136E0084941D /* DotLottie */,
 			);
 			productName = Mood;
 			productReference = 68C0FE692DDB60060084941D /* Mood.app */;
@@ -94,6 +116,10 @@
 			);
 			mainGroup = 68C0FE602DDB60060084941D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				68C0FE802DDC52BA0084941D /* XCRemoteSwiftPackageReference "CodableAppStorage" */,
+				68C0FF442DDE136E0084941D /* XCRemoteSwiftPackageReference "dotlottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 68C0FE6A2DDB60060084941D /* Products */;
 			projectDirPath = "";
@@ -254,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mood/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mood/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +350,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68C0FE802DDC52BA0084941D /* XCRemoteSwiftPackageReference "CodableAppStorage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timi2506/CodableAppStorage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		68C0FF442DDE136E0084941D /* XCRemoteSwiftPackageReference "dotlottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68C0FE812DDC52BA0084941D /* CodableAppStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68C0FE802DDC52BA0084941D /* XCRemoteSwiftPackageReference "CodableAppStorage" */;
+			productName = CodableAppStorage;
+		};
+		68C0FF452DDE136E0084941D /* DotLottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68C0FF442DDE136E0084941D /* XCRemoteSwiftPackageReference "dotlottie-ios" */;
+			productName = DotLottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68C0FE612DDB60060084941D /* Project object */;
 }
